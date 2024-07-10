@@ -1,0 +1,74 @@
+* {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: wheat;
+}
+
+#calculator{
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 3rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    position: relative;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    border-radius: 25px;
+    border: none;
+    -webkit-box-shadow: 7px 7px 6px 7px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 7px 7px 6px 7px rgba(0, 0, 0, 0.16);
+    box-shadow: 7px 7px 6px 7px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: wheat;
+}
+button:active{
+    background-color: hsl(23, 21%, 57%);
+}
+.operator-btn{
+    background-color: hsl(35, 100%, 55%);
+}
+.operator-btn:hover{
+    background-color: hsl(35, 100%, 65%);
+}
+.operator-btn:active{
+    background-color: hsl(35, 100%, 75%);
+}
